@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar React</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="min-h-screen flex flex-col gap-4 items-center justify-center bg-gray-50 p-4"
+    >
+      <!-- Counter Section -->
+      <section
+        class="bg-gray-200 p-4 rounded min-w-[50vw] flex flex-col gap-2 text-left"
+      >
+        <h1 class="text-xl">Counter Section</h1>
+        <p>Current Counter is: 0</p>
+        <button
+          class="bg-sky-100 hover:bg-sky-400 hover:text-white transitions-color duration-300 py-2 px-4 rounded"
+        >
+          Increment
+        </button>
+      </section>
+
+      <!-- Form Section -->
+      <section
+        class="bg-gray-200 p-4 rounded min-w-[50vw] flex flex-col gap-2 text-left"
+      >
+        <h1 class="text-xl">Form Section</h1>
+
+        <form class="flex flex-col gap-2">
+          <div class="flex gap-2 items-center">
+            <label for="inputOne">Input One</label>
+            <input
+              class="py-1 px-2 grow rounded"
+              type="text"
+              name="inputOne"
+              id="inputOne"
+            />
+          </div>
+
+          <div class="flex gap-2 items-center">
+            <label for="inputTwo">Input Two</label>
+            <input
+              class="py-1 px-2 grow rounded"
+              type="text"
+              name="inputTwo"
+              id="inputTwo"
+            />
+          </div>
+
+          <button
+            class="bg-sky-100 hover:bg-sky-400 hover:text-white transitions-color duration-300 py-2 px-4 rounded"
+            type="submit"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+
+      <!-- Table Section -->
+      <section
+        class="bg-gray-200 p-4 rounded min-w-[50vw] flex flex-col gap-2 justify-start items-start text-left"
+      >
+        <h1 class="text-xl">Table Section</h1>
+
+        <table class="table-auto border-collapse border border-emerald-600">
+          <thead>
+            <tr class="text-center">
+              <th class="border p-2 border-emerald-500">Id</th>
+              <th class="border border-emerald-500 p-2">Name</th>
+              <th class="border border-emerald-500 p-2">Email</th>
+              <th class="border border-emerald-500 p-2">Phone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-emerald-400 text-center p-2">1</td>
+              <td class="border border-emerald-400 p-2">Lorem Ipsum</td>
+              <td class="border border-emerald-400 p-2">dolor.sit@amet.com</td>
+              <td class="border border-emerald-400 p-2">000001</td>
+            </tr>
+            <tr>
+              <td class="border border-emerald-400 text-center p-2">2</td>
+              <td class="border border-emerald-400 p-2">Ipsum Lorem</td>
+              <td class="border border-emerald-400 p-2">sit.dolor@amet.com</td>
+              <td class="border border-emerald-400 p-2">000002</td>
+            </tr>
+            <tr>
+              <td class="border border-emerald-400 text-center p-2">3</td>
+              <td class="border border-emerald-400 p-2">Losum Iprem</td>
+              <td class="border border-emerald-400 p-2">amet.dolor@sit.com</td>
+              <td class="border border-emerald-400 p-2">000003</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
